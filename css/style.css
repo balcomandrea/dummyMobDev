@@ -1,17 +1,18 @@
 
 .container-fluid{
 	text-align: center;
-	
+		padding-bottom: 20px;
 }
 .row{
 	height: 100%;
+
 }
 .col-xs-12{
 	margin: 0 auto;
-	padding-bottom: 40px;
+	
 	
 }
-.col-xs-6{
+.col-xs-10{
 	background-color: #EFEFEF;
 	padding: 30px;
 /*	margin: 0 auto;*/
