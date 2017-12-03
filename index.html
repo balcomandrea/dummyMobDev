@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myFunction()">
+	<div class="container-fluid">
+		 <div class="row">
+		 	<div class="col-xs-12">
+		 			<br><br><br>
+		 			<h2>Welcome<br>to<br>
+		 			IC Archive</h2>
+		 			<br><br><br>
+					<img src="images/logo.png" class="logo" style="height: 	130px; width: 130px">
+					<br><br><br><br>
+					
+			<!-- <p>My First Paragraph.</p> -->
+
+			<p id="demo"></p>
+		 	</div>
+
+		 	<script>	
+		 		
+
+					function myFunction() {
+					setTimeout(function(){window.location.href='search.html'},5000);
+
+					document.getElementById("demo");
+				    var x = document.createElement("IMG");
+				    x.setAttribute("src", "images/cactus.gif");
+				    x.setAttribute("width", "180");
+				    x.setAttribute("height", "140");
+				    x.style.cssFloat='right';
+				    // x.setAttribute("alt", "The Pulpit Rock");
+				     document.body.appendChild(x);}
+				</script>
+
+		 </div>
+		<!-- <div class="mobile">
+			<br><br><br>
+			<p class="title">Welcome<br>to<br>IC Archive</p>
+			<br><br><br>
+			<img src="images/logo.png" class="logo">
+			<br><br><br>
+			<p class="sub">
+				are you a..?
+			</p><br><br>
+				<input type="button" class="btn" value="teacher"/>
+				<input type="button" class="btn" value="student"/>
+			<br><br><br>
+		</div> -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+body{
+
+ background: no-repeat linear-gradient( to bottom, #FECCCD, #999999); /* For Safari 5.1 to 6.0 */
+ height: 100vh;
+
+}
+
+.title{
+	
+	font-weight: bold;
+	font-family: 'Roboto black', sans-serif;
+	color: #808080;
+	overflow-x: hidden;
+	overflow-y: auto; 
+	font-size: 25px;
+
+}
+
+
+.publisher{
+
+	font-family: 'Roboto black thin', sans-serif;
+	color: #808080;
+	text-align: left;
+	overflow-x: hidden;
+	overflow-y: auto; 
+	font-size: 15px;
+
+}
+
+.abstract{
+
+	font-family: 'Roboto black thin', sans-serif;
+	color: #808080;
+	text-align: left;
+	overflow-x: hidden;
+	overflow-y:;
+	font-size: 20px;
+}
