@@ -26,10 +26,10 @@ body{
 
 
 .Allbtn{
-	margin-left: -10px;
+	/*margin-left: -10px;*/
 	margin-top:5px;
 	font-size: 20px;
-	height: 125px;
+	height: 110px;
 	width: 330px;
 	font-family: Segoe UI;
 	color: white;
