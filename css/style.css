@@ -43,21 +43,9 @@ h2{
 	cursor: pointer;
 }
 
-/*.footer {
-
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: none;
-   text-align: center;
- /*  padding-top: 60px;
-   position: fixed;
-}*/
-
 .footer {
-	font-size: 10px;
+  font-size: 10px;
   position: fixed;
-/*  position: relative;*/
   right: 0;
   bottom: 0;
   left: 0;

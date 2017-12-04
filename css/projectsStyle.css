@@ -3,11 +3,7 @@ body{
 
  background: no-repeat linear-gradient( to bottom, #FECCCD, #999999); /* For Safari 5.1 to 6.0 */
  height: 100vh;
- min-height: 100%;
-  position: relative;
   margin: 0;
-/*  padding-bottom: 6rem;*/
-
 }
 
 .title{
@@ -17,7 +13,7 @@ body{
 	color: #808080;
 	overflow-x: hidden;
 	overflow-y: auto; 
-	font-size: 25px;
+	font-size: 20px;
 
 }
 
@@ -40,5 +36,5 @@ body{
 	text-align: left;
 	overflow-x: hidden;
 	overflow-y:;
-	font-size: 20px;
+	font-size: 15px;
 }
