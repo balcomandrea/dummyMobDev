@@ -18,19 +18,24 @@ body{
 }*/
 
 .title{
-
+	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	float: left;
 	font-style: bold;
 	font-size: 15px; 
 
 }
+.link{
+	color: #003366;
+	text-decoration: none;
+
+}
+.link:hover{
+	text-decoration: none;
+	color: #3366cc;
+}
 
 .author{
 	font-family: 'Roboto', sans-serif;
-	float: left;
-	/*margin-left: -130px;
-	margin-top: 45px*/;
 	text-align: center;
 	font-style: bold;
 	font-size: 12px; 
