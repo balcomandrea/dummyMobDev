@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Capstone</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/projectsStyle.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="../projectCategory/allCapstones.html"><span class="glyphicon glyphicon-chevron-left" style="float: left; margin-top: 40px; color: #7D7D7D; font-size: 30px; "></span></a><br><br>
+			<div class="col-xs-1">
+			</div>
+
+			<div class="col-xs-10">
+					<span class="title">SOIL PARTICLE ANALYSIS USING DIGITAL IMAGE PROCESSING FOR TEXTURE CLASSIFICATION</span>
+						<br><br>
+					<span class="publisher">Chenny G. dela Luz, Kkarina N. Obiso, Salveah M. Saclauso, <br>Tamara Cher R. Mercado</span>
+						<br><br><br>
+						<b  class="abstract">ABSTRACT</b>
+						<br><br>
+					<div class="navigation">
+						<style>.tab{
+							display: none;
+
+						}
+						</style>
+
+						<script>
+							activeTab =1;
+							function showTab(num){
+								document.getElementById("tab"+activeTab).style.display='none';
+								document.getElementById("tab"+num).style.display='block';
+									activeTab=num;
+							}
+						</script>
+						<div id="tab1" class="tab" style="display: block; text-align: left; padding: 30px">
+							&emsp;&emsp;Soil texture is an essential factor for plant production and agricultural fertility. Sol texture is a physical property of the soil. This is composed of a percentage of sand, silt, and clay. Mechanical analysis is a way from which soil texture is classified by the portion of sand, silt, and clay using laboratory analysis.<br><br>
+
+							&emsp;&emsp;In this study, mechanical analysis of soil texture is being automated. This is by soil analysis of sand, silt and clay using image processing. The soil particle analysis could determine the textural class of clay loam. Soil samples taken from the field have been used as data sets. Different soil images are used from these soil samples.<br><br>
+
+							&emsp;&emsp;This study has been implemented using two different segmentations which are which are watershed and binarization . These two segmentations have been used to preprocess the images to separate the region of interest from its background. Laws’ Texture Measure is used as a texture feature of the soil image as portion of sand, silt and clay.
+							<br><br>
+						</div>
+
+						<div id="tab2" class="tab" style="text-align: left; padding: 30px">
+
+							&emsp;&emsp;There are six soil samples taken. Twenty-four soil images to separate the region of interest from its background. Laws’ Texture Measure is used as a texture extraction algorithm based on a statistical mean. This is to detect texture feature of the soil image as portion of sand, silt and clay.
+							<br><br>
+
+							&emsp;&emsp;There are six soil samples taken. Twenty-four soil images have been tested to detect the textural class being identified of the system. All soil images have been detected as clay loam and clay by the system with an 83% satisfaction rate.
+
+							<br><br>
+
+							&emsp;&emsp;The process provides an inexpensive and reliable estimate of soil texture, useful quality assessment. It is recommended that soil samples be taken from outside the City and subjected to Soil Particle Analysis to further check the reliability and accuracy of the system.in addition texture classification should also be embedded in the system so that it will directly produce the texture classification of the soil input.
+
+							<br><br>
+							<p style="color: #CCCCCC; text-align: center">2 of 2</p>
+						</div><br>
+					<a href=# onclick="showTab(1)">1</a>&emsp;&emsp;&emsp;&emsp;
+					<a href=# onclick="showTab(2)">2</a>
+<!-- 					<a href=# onclick="showTab(3)">3</a> -->						
+		</div>
+	</div>
+<div class="footer">
+	© 2014. Institute of Computing. &emsp; &emsp;University of Southeastern Philippines. &emsp; &emsp; &emsp; All rights reserved.
+</div>
+</div>
+</body>
+</html>
