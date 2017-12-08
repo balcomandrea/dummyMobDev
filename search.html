@@ -8,10 +8,17 @@
 	<link rel="stylesheet" href="css/search.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
 
 <script>
-	
+// 		$(document).bind('keydown', function(event) {
+
+//   if (event.keyCode == 27) { // 27 = 'Escape' keyCode (back button)
+//     event.preventDefault();
+//   }
+// });
+
 	$(document).ready(function(){
     $("#text").click(function(){
     $("#button1").hide();
@@ -30,7 +37,7 @@
 				
 				
 
-					<br><br><br>
+					<br><br>
 					<span class="holder">IC ARCHIVE</span>	
 					<br>
 
@@ -44,7 +51,7 @@
 					<br>
 					<input type="button" id="button3" class="Allbtn" value="Web"  onclick="window.location.href='projectCategory/allWeb.html'"//>
 					<br> 
-					<input type="button" id="button4" class="Allbtn" value="Final Project" onclick="window.location.href='projects/CowCow.html'"/>
+					<input type="button" id="button4" class="Allbtn" value="Final Project" onclick="window.location.href='projectCategory/allFinal.html'"/>
 					<br>
 				
 			</div>
