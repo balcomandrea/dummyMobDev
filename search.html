@@ -7,26 +7,63 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/search.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
 
 <script>
-// 		$(document).bind('keydown', function(event) {
 
-//   if (event.keyCode == 27) { // 27 = 'Escape' keyCode (back button)
-//     event.preventDefault();
-//   }
-// });
 
 	$(document).ready(function(){
-    $("#text").click(function(){
-    $("#button1").hide();
-    $("#button2").hide();
-    $("#button3").hide();
-    $("#button4").hide();
+
+		var ul, li;
+
+		 ul = document.getElementById("list");
+   		 li = ul.getElementsByTagName('li');
+
+	    $("#search").click(function(){
+	    $("#button1").hide();
+	    $("#button2").hide();
+	    $("#button3").hide();
+	    $("#button4").hide();
+	     $("#list").show();
+
+	    // For jquery mobile
+	    $("#button1").button('hide');
+	    $("#button2").button('hide');
+	    $("#button3").button('hide');
+	    $("#button4").button('hide');
     });
 });
+
+function search() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("list");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+
+        else {
+            li[i].style.display = "none";
+        }
+
+    }
+}
+	
+
 </script>
 
 </head>
@@ -40,10 +77,22 @@
 					<br><br>
 					<span class="holder">IC ARCHIVE</span>	
 					<br>
+					
+				
+					<input type="text"  id="search" name="search"  onkeyup="search()" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span> 
+					
 
-					<input type="text" id="text" name="search" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span> 
+						<ul id="list" style=" display: none;">
+						  <li><a href="projects/aimms.html">Aimms</a></li>
+						  <li><a href="projects/Braille.html">Braille</a></li>
+						  <li><a href="#">Billy</a></li>
+						  <li><a href="#">Bob</a></li>
 
-					<br><br>
+						  <li><a href="#">Calvin</a></li>
+						  <li><a href="#">Christina</a></li>
+						  <li><a href="#">Cindy</a></li>
+						</ul>
+
 						
 					<input type="button" id="button1" class="Allbtn" value="Capstone/Thesis" onclick="window.location.href='projectCategory/allCapstones.html'" data-transition="fade"/>
 					<br>
