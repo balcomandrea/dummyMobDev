@@ -24,25 +24,25 @@
 <script>
 
 
-	$(document).ready(function(){
+	jQuery(document).on('pageinit',function(){
 
 		var ul, li;
 
 		 ul = document.getElementById("list");
    		 li = ul.getElementsByTagName('li');
 
-	    $("#search").click(function(){
-	    $("#button1").hide();
-	    $("#button2").hide();
-	    $("#button3").hide();
-	    $("#button4").hide();
-	     $("#list").show();
+	    jQuery("#search").click(function(){
+	    jQuery("#button1").hide();
+	    jQuery("#button2").hide();
+	    jQuery("#button3").hide();
+	    jQuery("#button4").hide();
+	     jQuery("#list").show();
 
     });
 });
 
-	 $("#search").click(function () {
-      $("p").hide("slow");
+	 jQuery("#search").click(function () {
+      jQuery("p").hide("slow");
     }); 
 
 function search() {
