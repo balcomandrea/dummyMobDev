@@ -12,7 +12,13 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	
+
+	  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
 <script>
@@ -32,13 +38,12 @@
 	    $("#button4").hide();
 	     $("#list").show();
 
-	    // For jquery mobile
-	    $("#button1").button('hide');
-	    $("#button2").button('hide');
-	    $("#button3").button('hide');
-	    $("#button4").button('hide');
     });
 });
+
+	 $("#search").click(function () {
+      $("p").hide("slow");
+    }); 
 
 function search() {
     // Declare variables
@@ -61,6 +66,8 @@ function search() {
         }
 
     }
+
+
 }
 	
 
@@ -79,28 +86,25 @@ function search() {
 					<br>
 					
 				
-					<input type="text"  id="search" name="search"  onkeyup="search()" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span> 
+					<input type="text"  id="search" data-role="none" name="search"  onkeyup="search()" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span><br> 
 					
 
-						<ul id="list" style=" display: none;">
-						  <li><a href="projects/aimms.html">Aimms</a></li>
-						  <li><a href="projects/Braille.html">Braille</a></li>
-						  <li><a href="#">Billy</a></li>
-						  <li><a href="#">Bob</a></li>
-
-						  <li><a href="#">Calvin</a></li>
-						  <li><a href="#">Christina</a></li>
-						  <li><a href="#">Cindy</a></li>
+						<ul id="list" data-role="listview" style=" display: none; list-style: none;" >
+						  <li><a href="projects/aimms.html" rel="external"> Aimms' Meat and More POS/ Inventory System</a></li>
+						  <li><a href="projects/Braille.html" rel="external">Braille App: A RealTime Transcription System</a></li>
+						  <li><a href="projects/C++.html" rel="external">C++ Programming Interactive Tutorial Via Visualization</a></li>
+						  <li><a href="projects/CowCow.html" rel="external">Cow² D’ Carabao: Applying Histogram Calculation And Orb Feature Extraction In Identifying Carabeef And Beef </a></li>
+						  
 						</ul>
 
 						
-					<input type="button" id="button1" class="Allbtn" value="Capstone/Thesis" onclick="window.location.href='projectCategory/allCapstones.html'" data-transition="fade"/>
+					<input type="button" data-role="none" id="button1" class="Allbtn" value="Capstone/Thesis" onclick="window.location.href='projectCategory/allCapstones.html'" data-transition="fade"/>
 					<br>
-					<input type="button" id="button2" class="Allbtn" value="Technopreneurship Project"  onclick="window.location.href='projectCategory/allTechno.html'"/>
+					<input type="button" data-role="none" id="button2" class="Allbtn" value="Technopreneurship Project"  onclick="window.location.href='projectCategory/allTechno.html'"/>
 					<br>
-					<input type="button" id="button3" class="Allbtn" value="Web"  onclick="window.location.href='projectCategory/allWeb.html'"//>
+					<input type="button" data-role="none" id="button3" class="Allbtn" value="Web"  onclick="window.location.href='projectCategory/allWeb.html'"//>
 					<br> 
-					<input type="button" id="button4" class="Allbtn" value="Final Project" onclick="window.location.href='projectCategory/allFinal.html'"/>
+					<input type="button" data-role="none" id="button4" class="Allbtn" value="Final Project" onclick="window.location.href='projectCategory/allFinal.html'"/>
 					<br>
 				
 			</div>
