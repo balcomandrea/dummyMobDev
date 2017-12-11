@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Welcome</title>
+	<meta name="format-detection" content="telephone=no" /> 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/search.css">
@@ -11,38 +13,37 @@
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	
-	
 
-	  <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 
-	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
 <script>
 
 
-	jQuery(document).on('pageinit',function(){
+	$(document).on('pageinit',function(){
 
 		var ul, li;
 
 		 ul = document.getElementById("list");
    		 li = ul.getElementsByTagName('li');
 
-	    jQuery("#search").click(function(){
-	    jQuery("#button1").hide();
-	    jQuery("#button2").hide();
-	    jQuery("#button3").hide();
-	    jQuery("#button4").hide();
-	     jQuery("#list").show();
+	   $("#search").click(function(){
+	   $("#button1").hide();
+	    $("#button2").hide();
+	   $("#button3").hide();
+	    $("#button4").hide();
+	    $("#list").show();
 
     });
 });
 
-	 jQuery("#search").click(function () {
-      jQuery("p").hide("slow");
+	 $("#search").click(function () {
+      $("p").hide("slow");
     }); 
 
 function search() {
