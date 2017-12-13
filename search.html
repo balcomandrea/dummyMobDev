@@ -37,9 +37,14 @@
 					<br>
 					
 				
-					<input type="text"  id="search" data-role="none" name="search"  onkeyup="myFunction()" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span><br> 
+					<input type="text"  id="search" data-role="none" name="search" onclick="onSearch()" onkeyup="myFunction()" placeholder="search" style="width: 320px; background-color: #999999; color:#666666; margin-right: 10px; height: 30px;" ><span class="glyphicon glyphicon-search" ></span><br> 
 					<script>
-							function myFunction() {
+						function onSearch(){
+							document.getElementById("list").style.display = "block";
+							document.getElementById("nav").style.display = "none";
+						}
+
+						function myFunction() {
 							    // Declare variables
 							    var input, filter, ul, li, a, i;
 							    input = document.getElementById('search');
@@ -60,7 +65,7 @@
 								
 					</script>
 
-						<ul id="list" data-role="listview" style=" list-style: none;" >
+						<ul id="list" style="display:none; list-style: none; text-align: left" >
 						  <li><a href="projects/aimms.html" rel="external"> Aimms' Meat and More POS/ Inventory System</a></li>
 						  <li><a href="projects/Braille.html" rel="external">Braille App: A RealTime Transcription System</a></li>
 						  <li><a href="projects/C++.html" rel="external">C++ Programming Interactive Tutorial Via Visualization</a></li>
@@ -85,7 +90,7 @@
 						  
 						</ul>
 
-						
+					<div id="nav">
 					<input type="button" data-role="none" id="button1" class="Allbtn" value="Capstone/Thesis" onclick="window.location.href='projectCategory/allCapstones.html'" data-transition="fade"/>
 					<br>
 					<input type="button" data-role="none" id="button2" class="Allbtn" value="Technopreneurship Project"  onclick="window.location.href='projectCategory/allTechno.html'"/>
@@ -94,7 +99,7 @@
 					<br> 
 					<input type="button" data-role="none" id="button4" class="Allbtn" value="Final Project" onclick="window.location.href='projectCategory/allFinal.html'"/>
 					<br>
-				
+				</div>	
 			</div>
 		 			 	
 		 	</div>
